@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@300;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="contenedormarca">
+    <header>
+      <h1>Woofy Doofy<sup>&reg;</sup></h1>
+    </header>
+  </div>
+  <br>
+  <div class="contenedorleyenda">
+    <h2>Administrar pagos</h2>
+    <br>
+    <p>Aceptamos todas las tarjetas de débito y crédito. Ahorre tiempo y molestías al configurar su cuenta para pagar
+      automáticamente los cargos recurrentes todos los meses.</p>
+    <br>
+    <p> Nota: Si los campos de pago no están visibles, deshabilite temporalmente cualquier software de antivirus y
+      actualice la página.</p>
+  </div> <br>
+  <main>
+    <br>
+    <br>
+    <div class="contenedordatos">
+      <h3>Detalles de la tarjeta</h3>
+      <br>
+      <form class="cuadrodatos">
+        <label for="nombre">
+          <span>Nombre de la tarjeta:</span><br>
+          <input type="text" name="nombre" id="nombre" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '')" style="outline-color: #a65372"
+            placeholder="Ingresa nombre completo" title="Ingrese el nombre completo de la tarjeta." required>
+        </label>
+        <br>
+        <br>
+        <label for="numero">
+          <span>Número de tarjeta:</span><br>
+          <input type="text" name="numero" id="numero" placeholder="4142 4243 4445 4546"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')" style="outline-color: #a65372" pattern="[1-9]+"
+            title="Ingrese el número completo de la tarjeta." required>
+        </label>
+        <br>
+        <br>
+        <div class="flexbox">
+          <span class="expiracion">Expiración:</span>
+          <label for="fechaMes">
+            <input type="text" name="fechaMes" id="fechaMes" placeholder="MM"
+              title="Ingrese el mes de vencimiento de la tarjeta en formato MM."
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')" style="outline-color: #a65372" pattern="[1-9]+" maxlength="2" minlength="2"
+              step="1" required>
+          </label><br>
+          <label for="fechaYear">
+            <input type="text" name="fechaYear" id="fechaYear" placeholder="AA"
+              title="Ingrese el año de vencimiento de la tarjeta en formato AA."
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')" style="outline-color: #a65372" pattern="[1-9]+" maxlength="2" minlength="2"
+              step="1" required>
+          </label><br>
+          <label for="codigosecreto">
+            <span class="ccv">CCV:</span><br>
+            <input type="text" name="codigosecreto" id="codigosecreto" placeholder="###"
+              title="Ingrese el código de seguridad del reverso de la tarjeta."
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')" style="outline-color: #a65372" pattern="[1-9]+" maxlength="3" minlength="3"
+              step="1" required>
+          </label>
+        </div>
+        <br>
+        <button type="submit" id="botonValidar">PAGAR</button>
+      </form>
+    </div>
+    <script type="module" src="index.js"></script>
+  </main>
+
+</body>
 </html>

@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 3000px;
+  background: url(labradores.jpg);
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  align-items: center;
+}
+
+.contenedormarca {
+  background-color: #ffd054;
+  border-radius: 10px;
+  border: 40px solid #582954;
+  width: 100%;
+  max-width: 3000px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 90px;
+  font-family: "Darumadrop One", cursive;
+  color: #582954;
+}
+
+h2,
+h3 {
+  font-size: 25px;
+  font-family: "Unbounded", cursive;
+}
+
+.contenedorleyenda {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
+}
+
+.contenedordatos {
+  margin: auto; /* centrar horizontalmente un elemento en su contenedor */
+  background-color: #fff;
+  border-radius: 10px;
+  border: 20px solid #ffd054;
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 60px; /* 2 valores, primero en sup e inf y segundo para izq y derecha; 4 valores, se aplican en el orden superior, derecho, inferior e izquierdo. */
+  margin: auto;
+  box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
+}
+
+.expiracion {
+    display: flex;
+    align-items: center;
+}
+
+.cuadrodatos {
+  display: flex;
+  flex-direction: column;
+}
+
+span,
+p {
+  font-size: 22px;
+  color: #070707;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  border: 2px solid #a65372;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #582954;
+  padding: 10px 5px;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: auto;
+  box-shadow: 0 5px 5px 0 rgba(90, 116, 148, 0.2);
+}
+
+button {
+  background-color: #a65372;
+  width: 90%;
+  border: 10px;
+  border: 2px solid #582954;
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+  cursor: pointer;
+  /* align-items: center; */
+}
+
+#botonValidar {
+  color: #582954;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Unbounded", cursive;
+}
+button:hover {
+  background-color: #ffd054 /* #bd475f */;
+}
+.flexbox {
+  width: 101%;
+  display: flex;
+}
+
+.flexbox label {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 10px;
+}

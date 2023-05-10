@@ -1,3 +1,19 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
-console.log(validator);
+document.getElementById("botonValidar").addEventListener('click', validarNumero)
+
+function validarNumero () {
+  const obtenerNumero = document.getElementById("numero").value;
+  if (obtenerNumero.length === 0) {
+    return false  
+  } else { 
+    const tarjetaValida = validator.isValid(obtenerNumero);
+    if (tarjetaValida) {
+      alert ("Procesando pago, por favor espere...");
+      const nuevoNumero = validator.maskify(obtenerNumero);
+      document.getElementById("numero").value = nuevoNumero;
+    } else {
+      alert ("Ingrese un número de tarjeta válido");
+    }
+  }
+} 
