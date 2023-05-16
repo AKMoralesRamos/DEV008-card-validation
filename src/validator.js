@@ -3,7 +3,7 @@ const validator = {
    
     const numeroCorrectoReverse = numeroCorrecto.split("").reverse();
     for (let i = 0; i < numeroCorrectoReverse.length; i++) {
-      if (i % 2 !== 0) {
+      if (i % 2 !== 0) { 
         numeroCorrectoReverse[i] = parseInt(numeroCorrectoReverse[i]) * 2;
       }
     }
