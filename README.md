@@ -1,5 +1,6 @@
-# TarjetaValida
-Proyecto basado en el Algoritmo de Luhn.
+<<<<<<< HEAD
 
 
-
+=======
+  
+>>>>>>> 424e2bbfe95910b5e183e98d587a9161ef5f58df
