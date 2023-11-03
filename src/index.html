@@ -70,7 +70,9 @@
         <br>
         <br>
         <div class="flexbox">
+          <div class="expiracionFecha">
           <span class="expiracion">Expiración:</span>
+          <div class="inputFecha">
           <label for="fechaMes">
             <input type="text" name="fechaMes" id="fechaMes" placeholder="MM"
               title="Ingrese el mes de vencimiento de la tarjeta en formato MM."
@@ -83,13 +85,17 @@
               oninput="this.value = this.value.replace(/[^0-9]/g, '')" style="outline-color: #a65372" pattern="[1-9]+" maxlength="2" minlength="2"
               step="1" required>
           </label><br>
+          </div>
+          </div>
+          <div class="codigoSe">
           <label for="codigosecreto">
-            <span class="ccv">CCV:</span><br>
+            <span class="ccv">CCV:</span>
             <input type="text" name="codigosecreto" id="codigosecreto" placeholder="###"
               title="Ingrese el código de seguridad del reverso de la tarjeta."
               oninput="this.value = this.value.replace(/[^0-9]/g, '')" style="outline-color: #a65372" pattern="[1-9]+" maxlength="3" minlength="3"
               step="1" required>
           </label>
+          </div>
         </div>
         <br>
         <button type="submit" id="botonValidar">PAGAR</button>

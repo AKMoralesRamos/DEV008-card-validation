@@ -75,6 +75,20 @@ h3 {
     align-items: center;
 }
 
+.expiracionFecha {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFecha {
+  display: flex;
+  justify-content: row;
+}
+
+.codigoSe {
+  display: flex;
+  flex-direction: row;
+}
 .cuadrodatos {
   display: flex;
   flex-direction: column;
@@ -89,6 +103,7 @@ p {
 
 input {
   width: 100%;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 7px;
   border: 2px solid #a65372;
@@ -98,7 +113,7 @@ input {
   padding: 10px 5px;
   justify-content: space-around;
   align-items: stretch;
-  margin: auto;
+  /* margin: auto; */
   box-shadow: 0 5px 5px 0 rgba(90, 116, 148, 0.2);
 }
 
@@ -128,10 +143,16 @@ button:hover {
 .flexbox {
   width: 101%;
   display: flex;
+  justify-content: space-between;
 }
 
 .flexbox label {
   display: flex;
   flex-grow: 1;
   margin-right: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }

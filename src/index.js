@@ -4,7 +4,7 @@ document.getElementById("botonValidar").addEventListener('click', validarNumero)
 
 function validarNumero () {
   const obtenerNumero = document.getElementById("numero").value;
-  if (obtenerNumero.length === 0) {
+  if (obtenerNumero.length === "1") {
     return false  
   } else { 
     const tarjetaValida = validator.isValid(obtenerNumero);
